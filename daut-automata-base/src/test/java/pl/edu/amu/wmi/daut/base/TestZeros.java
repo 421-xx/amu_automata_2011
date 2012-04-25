@@ -6,8 +6,7 @@ import junit.framework.TestCase;
 * Test klasy AlwaysAcceptingContextChecker.
 */
 public class TestZeros extends TestCase {
-
-    /**
+/**
 * Prosty test klasy AlwaysAcceptingContextChecker.
 */
 public final void testZeros() {
@@ -19,7 +18,11 @@ public final void testZeros() {
         State q2a = spec.addState();
         State q3a = spec.addState();
         State q4a = spec.addState();
+<<<<<<< HEAD
         State q5a = spec.addState();        
+=======
+        State q5a = spec.addState();
+>>>>>>> mywork
         spec.addTransition(q0a, q0a, new CharTransitionLabel('a'));
         spec.addTransition(q0a, q0a, new CharTransitionLabel('b'));
         spec.addTransition(q0a, q0a, new CharTransitionLabel('c'));
@@ -46,6 +49,10 @@ public final void testZeros() {
         spec.addTransition(q0a, q0a, new CharTransitionLabel('x'));
         spec.addTransition(q0a, q0a, new CharTransitionLabel('y'));
         spec.addTransition(q0a, q0a, new CharTransitionLabel('z'));
+<<<<<<< HEAD
+=======
+
+>>>>>>> mywork
         spec.addTransition(q0a, q1a, new CharTransitionLabel('0'));
         spec.addTransition(q1a, q2a, new CharTransitionLabel('0'));
         spec.addTransition(q2a, q3a, new CharTransitionLabel('0'));
@@ -74,7 +81,11 @@ public final void testZeros() {
         spec.addTransition(q3a, q3a, new CharTransitionLabel('w'));
         spec.addTransition(q3a, q3a, new CharTransitionLabel('x'));
         spec.addTransition(q3a, q3a, new CharTransitionLabel('y'));
+<<<<<<< HEAD
         spec.addTransition(q3a, q3a, new CharTransitionLabel('z'));        
+=======
+        spec.addTransition(q3a, q3a, new CharTransitionLabel('z'));
+>>>>>>> mywork
         spec.markAsInitial(q0a);
         spec.markAsFinal(q3a);
         final AutomatonByRecursion automaton = new AutomatonByRecursion(spec);
@@ -85,4 +96,7 @@ public final void testZeros() {
         assertFalse(automaton.accepts("f00"));
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> mywork
